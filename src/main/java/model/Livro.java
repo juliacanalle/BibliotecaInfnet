@@ -7,8 +7,17 @@ public class Livro {
     private String autor;
     private String descricao;
     private String categoria;
-    private String imagemCapa; // URL ou caminho
-    private String arquivoLivro; // Caminho interno do sistema
+
+    public Livro(int id, String titulo, String autor, String descricao, String categoria) {
+        this.id = id;
+        this.titulo = titulo;
+        this.autor = autor;
+        this.descricao = descricao;
+        this.categoria = categoria;
+    }
+
+    public Livro() {
+    }
 
     public int getId() {
         return id;
@@ -34,14 +43,6 @@ public class Livro {
         this.autor = autor;
     }
 
-    public String getCategoria() {
-        return categoria;
-    }
-
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
-    }
-
     public String getDescricao() {
         return descricao;
     }
@@ -50,19 +51,11 @@ public class Livro {
         this.descricao = descricao;
     }
 
-    public String getImagemCapa() {
-        return imagemCapa;
+    public String getCategoria() {
+        return categoria;
     }
 
-    public void setImagemCapa(String imagemCapa) {
-        this.imagemCapa = imagemCapa;
-    }
-
-    public String getArquivoLivro() {
-        return arquivoLivro;
-    }
-
-    public void setArquivoLivro(String arquivoLivro) {
-        this.arquivoLivro = arquivoLivro;
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
     }
 }

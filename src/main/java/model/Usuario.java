@@ -14,21 +14,22 @@ public class Usuario {
     private String cpf;
     private LocalDate dataNascimento;
     private String telefone;
-    private String endereco;
     private TipoUsuario tipoUsuario;
     private DadosPagamento dadosPagamento;
 
-    public Usuario(int id, String nomeCompleto, String email, String senha, String cpf, LocalDate dataNascimento, String endereco, String telefone, TipoUsuario tipoUsuario,List<Livro> wishlist, DadosPagamento dadosPagamento) {
+    public Usuario(int id, String nomeCompleto, String email, String senha, String cpf, LocalDate dataNascimento, String telefone, TipoUsuario tipoUsuario, DadosPagamento dadosPagamento) {
         this.id = id;
         this.nomeCompleto = nomeCompleto;
         this.email = email;
         this.senha = senha;
         this.cpf = cpf;
         this.dataNascimento = dataNascimento;
-        this.endereco = endereco;
         this.telefone = telefone;
         this.tipoUsuario = tipoUsuario;
         this.dadosPagamento = dadosPagamento;
+    }
+
+    public Usuario() {
     }
 
     public int getId() {
@@ -87,14 +88,6 @@ public class Usuario {
         this.telefone = telefone;
     }
 
-    public String getEndereco() {
-        return endereco;
-    }
-
-    public void setEndereco(String endereco) {
-        this.endereco = endereco;
-    }
-
     public TipoUsuario getTipoUsuario() {
         return tipoUsuario;
     }
@@ -110,6 +103,6 @@ public class Usuario {
     public void setDadosPagamento(DadosPagamento dadosPagamento) {
         this.dadosPagamento = dadosPagamento;
     }
-
 }
+
 

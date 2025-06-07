@@ -13,6 +13,18 @@ public class Assinatura {
     private LocalDate dataFim;
     private Enums.StatusAssinatura status;
 
+    public Assinatura(int id, Usuario usuario, PlanoAssinatura plano, LocalDate dataInicio, LocalDate dataFim, Enums.StatusAssinatura status) {
+        this.id = id;
+        this.usuario = usuario;
+        this.plano = plano;
+        this.dataInicio = dataInicio;
+        this.dataFim = dataFim;
+        this.status = status;
+    }
+
+    public Assinatura() {
+    }
+
     public int getId() {
         return id;
     }
