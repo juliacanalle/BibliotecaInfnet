@@ -1,10 +1,16 @@
 package model;
 
+import enums.FormaPagamento;
+
 public class DadosPagamento {
 
     private int id;
     private FormaPagamento formaPagamento;
-    private Integer numeroParcelas;
+
+    public DadosPagamento(int id, FormaPagamento formaPagamento) {
+        this.id = id;
+        this.formaPagamento = formaPagamento;
+    }
 
     public int getId() {
         return id;
@@ -14,14 +20,6 @@ public class DadosPagamento {
         this.id = id;
     }
 
-    public Integer getNumeroParcelas() {
-        return numeroParcelas;
-    }
-
-    public void setNumeroParcelas(Integer numeroParcelas) {
-        this.numeroParcelas = numeroParcelas;
-    }
-
     public FormaPagamento getFormaPagamento() {
         return formaPagamento;
     }
@@ -29,6 +27,4 @@ public class DadosPagamento {
     public void setFormaPagamento(FormaPagamento formaPagamento) {
         this.formaPagamento = formaPagamento;
     }
-
-    // Se cartão
 }

@@ -29,12 +29,6 @@ public class Enums {
         CANCELADA
     }
 
-    public enum MeioDeEnvio {
-        EMAIL,
-        SMS,
-        PLATAFORMA
-    }
-
     public enum PrazoLocacao {
         SETE_DIAS(7),
         QUATORZE_DIAS(14),
